@@ -1,3 +1,6 @@
+library(lubridate)
+library(dplyr)
+library(data.table)
 full.data<-read.table("household_power_consumption.txt", na.strings="?", sep=';', header=T)
 data<-filter(full.data, Date=='1/2/2007'|Date=='2/2/2007')
 
